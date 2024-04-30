@@ -1,12 +1,1 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "./api/index.js",
-      "scripts": {
-        "vercel-build": "npm start"
-      }
-    }
-  ],
-  "routes": [{ "src": "/(.*)", "dest": "/api" }]
-}
+{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api" }] }
